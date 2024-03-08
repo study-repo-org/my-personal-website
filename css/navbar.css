@@ -5,14 +5,12 @@
 
 .navbar{
     position: relative;
-    /* top: 10px; */
     height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     padding: 20px 0;
     background-color: #252734;
-    /* justify-content: space-between; */
 }
 
 .nav-container{
@@ -26,9 +24,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    /* margin: auto; */
     display: flex;
-    /* width: 60%; */
     gap: 24px;
 
 }
@@ -76,26 +72,17 @@ color: white;
 }
 
 .menu-icon div{
+    cursor: pointer;
     height: 4px;
     background-color:white;
     width: 22px;
 }
 
 .x-icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 0px 30px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, .1);
-    color: white;
+display: none;
 }
 
-.x-icon i{
-color: white;
-}
+
 
 @media(min-width: 1000px){
     .nav-container{
@@ -134,19 +121,39 @@ color: white;
         padding-top: 200px;
         transition: transform .3s ease-in-out;
     }
+
+    .x-icon{
+        cursor: pointer;
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0px 30px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, .1);
+        color: white;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    
     .logo{
         padding: 0 50px;
     }
     .show{
         display: flex;
     }
+    
 }
 
 .navbar.sticky {
     position: fixed;
     top: 0;
     background-color: #252734;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000; 
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
