@@ -239,6 +239,7 @@
 }
 
 .service-div {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -333,13 +334,12 @@
 }
 
 .count-div{
-    /* background-color: aqua; */
     display: flex;
     justify-content:center;
     align-items: center;
     color: #858792;
-    margin: 20px;
-    padding:  40px;
+    /* margin: 20px; */
+    padding:  40px 0;
     width: calc(50% - 10px);
 }
 
@@ -376,5 +376,145 @@
 @media screen and (max-width: 800px) {
     .count-section{
         flex-direction: column;
+    }
+}
+
+
+/* project */
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background: #2a2c39
+}
+
+.project-container p{
+    text-align: center;
+    color: #858792;
+    padding: 0 0 0 27px;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+}
+
+.project-container h2{
+    text-align: center;
+    color: #FFFFFF;
+    margin: 25px 0 8px;
+    font-size: 50px;
+    font-family: Poppins, sans-serif;
+}
+
+.project-section{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-div{
+  padding-bottom: 40px;
+}
+
+.project-div .project-image{
+    height: 350px;  
+    width: 500px;
+}
+
+.project-div img{
+    height: 100%;  
+    width: 100%;
+
+}
+.project-div-info{
+    padding: 20px;
+}
+
+.project-div h3{
+    padding-bottom: 20px;
+    font-size: 28px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+.project-container .project-div p{
+    text-align: center;
+    color: #858792;
+    padding: 0 0 0 27px;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .project-container{
+
+        padding: 75px 0;
+        background: #2a2c39
+    }
+
+    .project-container  h2{
+        color: #FFFFFF;
+        margin:25px 0 8px;
+        padding:0 10px ;
+        font-size: 45px;
+        font-family: Poppins, sans-serif;
+    } 
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .project-container{
+        padding: 75px 0;
+        background: #2a2c39
+    }
+
+    .project-container h2{
+        color: #FFFFFF;
+        margin:25px 0 8px;
+        padding:0 20px ;
+        font-size: 25px;
+        font-family: Poppins, sans-serif;
+    }
+
+    .project-div .project-image{
+        margin: auto;
+        height: 250px;  
+        width: 250px;
+    }
+
+    .project-div img{
+
+        height: 100%;  
+        width: 100%;
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-section{
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-div h3{
+        padding-bottom: 0;
+        font-size: 17px;
+        color: #FFFFFF;
+        font-family: sans-serif;
+    }
+
+    .project-container .project-div p{
+        text-align: center;
+        color: #858792;
+        padding: 0 0 0 27px;
+        font-size: 15px;
+        font-family: Poppins, sans-serif;
     }
 }
