@@ -1,1 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section{
+    display: flex;
+    background-color: #252734;
+    height: 910px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info{
+    padding-bottom: 200px;
+}
+
+.hero-info .hero-p{
+    margin-top: 40px;
+    font-family: "Cormorant Garamond", serif;
+    color: #FFFFFF;
+    font-size: 85px;
+}
+
+.hero-info h3{
+    margin-top: 40px;
+    font-family: "Cormorant Garamond", serif;
+    color: #FFFFFF;
+    font-size: 100px;
+}
+
+.hero-info p{
+    margin-top: 40px;
+    color: #858792;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.hero-info button{
+    margin-top: 40px;
+    border-radius: 50px;
+    background-color: #252734;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 85px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 6px 60px;
+    border: 1px solid #3b3d49;
+    transition: all .5s ease;
+}
+.hero-info button:hover{
+    background-color: #3b3d49;
+}
+
+.hero-image{
+    /* width: 400px; */
+    /* margin-top: 100px; */
+}
+
+.hero-image img{
+    height: 700px;
+     width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+    .hero-section{
+        display: flex;
+        background-color: #252734;
+        height: 910px;
+        flex-direction: column;
+        justify-content:left;
+        align-items: normal;
+    }
+
+    
+    .hero-section {
+        flex-direction: column-reverse; 
+        padding-top: 50px;
+    }
+
+    
+    .hero-info{
+        padding-bottom: 100px;
+        padding-left: 100px;
+    }
+    
+    .hero-info .hero-p{
+        margin-top: 40px;
+        font-family: "Cormorant Garamond", serif;
+        color: #FFFFFF;
+        font-size: 40px;
+    }
+    
+    .hero-info h3{
+        margin-top: 40px;
+        font-family: "Cormorant Garamond", serif;
+        color: #FFFFFF;
+        font-size: 50px;
+    }
+    
+    .hero-info p{
+        margin-top: 40px;
+        color: #858792;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+
+    .hero-info button{
+        margin-top: 40px;
+        border-radius: 50px;
+        background-color: #252734;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 60px;
+        padding-right: 60px;
+        height: 60px;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-family: sans-serif;
+        padding: 6px 30px;
+        border: 1px solid #3b3d49;
+        transition: all .5s ease;
+    }
+   
+    .hero-image{
+        margin: auto;
+        width: 500px;
+    }
+    
+    .hero-image img{
+        height: 500px;
+         width: 500px;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .hero-section {
+        flex-direction: column-reverse; 
+        padding-top: 0;
+    }
+
+    
+    .hero-info{
+        /* background-color: antiquewhite; */
+        padding-bottom: 100px;
+        padding-left: 10px;
+    }
+    
+    .hero-info .hero-p{
+        margin-top: 40px;
+        font-family: "Cormorant Garamond", serif;
+        color: #FFFFFF;
+        font-size: 40px;
+    }
+    
+    .hero-info h3{
+        margin-top: 40px;
+        font-family: "Cormorant Garamond", serif;
+        color: #FFFFFF;
+        font-size: 50px;
+    }
+    
+    .hero-info p{
+        margin-top: 40px;
+        color: #858792;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+
+    .hero-info button{
+        margin-top: 40px;
+        border-radius: 50px;
+        background-color: #252734;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 60px;
+        padding-right: 60px;
+        height: 60px;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-family: sans-serif;
+        padding: 6px 30px;
+        border: 1px solid #3b3d49;
+        transition: all .5s ease;
+    }
+
+
+
+    .hero-image{
+        width: 250px;
+    }
+
+    .hero-image img{
+        height: 300px;
+         width: 250px;
+    }
+}
+
+
+
+/* Services */
