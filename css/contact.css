@@ -186,7 +186,7 @@
   }
   
   /* Media query for tablets and smaller devices */
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .map-container {
       text-align: center;
     flex-direction: column;

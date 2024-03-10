@@ -475,6 +475,7 @@
     font-family: Poppins, sans-serif;
 }
 
+
 .project-section{
     padding-top: 100px;
     display: flex;
@@ -507,6 +508,12 @@
     color: #FFFFFF;
     font-family: sans-serif;
 }
+
+.project-container h3 a{
+    text-decoration: none;
+     color: #FFFFFF;
+   
+ }
 
 .project-container .project-div p{
     text-align: center;
