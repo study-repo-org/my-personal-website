@@ -33,14 +33,15 @@
   .text-section h1 {
     color: #FFFFFF;
     margin-bottom:0 0 10px;
-    font-size: 70px;
+    font-size: 40px;
     font-family: sans-serif;
   }
 
   .text-section h3{
+    padding-top: 10px;
     color: #858792;
     margin: 0 0 8px;
-    font-size: 36px;
+    font-size: 20px;
     font-family: sans-serif;
   }
   
@@ -48,8 +49,9 @@
     color: #858792;
     line-height: 1.6;
     margin: 25px 0 0;
-    padding: 16px;
+    padding: 16px 0;
     font-family: sans-serif;
+    text-transform: capitalize;
   }
   
   .text-section button {
@@ -113,14 +115,14 @@
     .text-section h1 {
       color: #FFFFFF;
       margin-bottom:0 0 10px;
-      font-size: 50px;
+      font-size: 30px;
       font-family: sans-serif;
     }
   
     .text-section h3{
       color: #858792;
       margin: 0 0 8px;
-      font-size: 22px;
+      font-size: 15px;
       font-family: sans-serif;
     }
     
