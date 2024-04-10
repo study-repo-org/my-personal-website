@@ -69,7 +69,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 formContainer.addEventListener("submit", async (e) => {
     e.preventDefault();
-    
+    let imageErrorMessage = document.getElementById("imageError");
+    let descriptionErrorMessage = document.getElementById("descriptionError"); 
+    let titleErrorMessage = document.getElementById("titleError"); 
+
+    if (email === "" || name === "" || subject === "" || message === "") {
+      imageErrorMessage.innerText = "image is required";
+      descriptionErrorMessage.innerText = "description is required";    
+      titleErrorMessage.innerText = "title is required";    
+      
+      return; // Exit function if any field is empty
+  }
+
     let image = document.getElementById("image").value;
     let description = document.getElementById("description").value;
     let title = document.getElementById("title").value;
