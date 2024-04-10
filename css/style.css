@@ -510,7 +510,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto auto;
+    margin: auto 10px;
   }
 
 .experience-div {
