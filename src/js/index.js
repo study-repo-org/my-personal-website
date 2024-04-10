@@ -1,5 +1,5 @@
 // API
-const projectUrl = " http://localhost:3000/projects";
+const projectUrl = "https://my-personal-website-vlip.onrender.com/projects";
 
 
 // DOM elements
