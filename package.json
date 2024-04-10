@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/MohamedAhmeDdev/my-personal-website/issues"
   },
-  "homepage": "https://github.com/MohamedAhmeDdev/my-personal-website#readme"
+  "homepage": "https://github.com/MohamedAhmeDdev/my-personal-website#readme",
+  "dependencies": {
+    "json-serve": "^0.1.0",
+    "json-server": "^0.17.1"
+  }
 }
