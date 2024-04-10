@@ -1,0 +1,21 @@
+{
+  "name": "my-personal-website",
+  "version": "1.0.0",
+  "description": "#### Date, 2024/04/10",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedAhmeDdev/my-personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedAhmeDdev/my-personal-website/issues"
+  },
+  "homepage": "https://github.com/MohamedAhmeDdev/my-personal-website#readme"
+}
