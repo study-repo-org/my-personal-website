@@ -29,6 +29,7 @@ function createHouseCard(project) {
                     <div class="project-div-info">
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
+                        <button class="delete-button" onclick="deleteProject(${project.id})">Delete</button>
                     </div>
                 </div>
             </div>
@@ -72,11 +73,22 @@ document.addEventListener("DOMContentLoaded", () => {
 // project submission 
 formContainer.addEventListener("submit", async (e) => {
     e.preventDefault();
+    
     let imageErrorMessage = document.getElementById("imageError");
     let descriptionErrorMessage = document.getElementById("descriptionError"); 
     let titleErrorMessage = document.getElementById("titleError"); 
 
-    if (email === "" || name === "" || subject === "" || message === "") {
+    imageErrorMessage.innerText = "";
+    descriptionErrorMessage.innerText = "";
+    titleErrorMessage.innerText = "";
+
+
+
+    let image = document.getElementById("image").value;
+    let description = document.getElementById("description").value;
+    let title = document.getElementById("title").value;
+
+    if (image === "" || description === "" || title === "") {
       imageErrorMessage.innerText = "image is required";
       descriptionErrorMessage.innerText = "description is required";    
       titleErrorMessage.innerText = "title is required";    
@@ -84,9 +96,7 @@ formContainer.addEventListener("submit", async (e) => {
       return; // Exit function if any field is empty
   }
 
-    let image = document.getElementById("image").value;
-    let description = document.getElementById("description").value;
-    let title = document.getElementById("title").value;
+
 
   
     let id = Math.floor(Math.random() * 100000);
@@ -110,13 +120,29 @@ formContainer.addEventListener("submit", async (e) => {
       if (!response.ok) {
         throw new Error('Failed to add project');
       }
-      console.log('House added successfully');
+      document.getElementById("image").value= "";
+      document.getElementById("description").value= "";
+      document.getElementById("title").value= "";
   
     } catch (error) {
       console.error('Error adding project:', error);
     }
 });
   
+
+const deleteProject = (id) => {
+  fetch(`${projectUrl}/${id}`, {
+    method: "DELETE",
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+  })
+  .catch(error => {
+    console.error('There was a problem with your fetch operation:', error);
+  });
+}
 
 
 // submitting cont info for users
@@ -180,7 +206,11 @@ contactForm.addEventListener("submit", async (e) => {
     if (!response.ok) {
       throw new Error('Failed to add contact');
     }
-    console.log('House added successfully');
+
+    document.getElementById("email").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
 
   } catch (error) {
     console.error('Error adding contact:', error);

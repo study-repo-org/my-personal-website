@@ -1050,6 +1050,17 @@
     width: 100%;
   }
 }
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
 
 @media screen and (max-width: 768px) {
   .project-section {
